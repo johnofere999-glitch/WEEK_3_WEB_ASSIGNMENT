@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Budget & Expense Tracker</title>
+  
+  <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Part 1: Page Header Card -->
+    <header class="card main-header">
+      <h1>Personal Budget Tracker</h1>
+      <p>Take control of your finances — track income and expenses in one place.</p>
+    </header>
+
+    <main>
+      <!-- Part 2: Add Expense Form Card -->
+      <section class="card form-card">
+        <h2>Add New Expense</h2>
+        <form class="expense-form">
+          <div class="form-group">
+            <label for="expense-name">Expense Name</label>
+            <input type="text" id="expense-name" placeholder="e.g. Groceries">
+          </div>
+
+          <div class="form-group">
+            <label for="expense-amount">Amount ($)</label>
+            <input type="number" id="expense-amount" placeholder="e.g. 45.50" step="0.01">
+          </div>
+
+          <div class="form-group">
+            <label for="expense-category">Category</label>
+            <select id="expense-category">
+              <option value="">Select Category</option>
+              <option value="food">Food & Dining</option>
+              <option value="transport">Transportation</option>
+              <option value="utilities">Utilities & Bills</option>
+              <option value="entertainment">Entertainment</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Add Expense</button>
+        </form>
+      </section>
+
+      <!-- Part 3: Expense Table Card -->
+      <section class="card table-card">
+        <h2>Your Expenses</h2>
+        <div class="table-wrapper">
+          <table class="expense-table">
+            <thead>
+              <tr>
+                <th>Expense Name</th>
+                <th>Category</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monthly Grocery Shopping</td>
+                <td>Food & Dining</td>
+                <td>$120.00</td>
+              </tr>
+              <tr>
+                <td>Electric Bill</td>
+                <td>Utilities & Bills</td>
+                <td>$65.40</td>
+              </tr>
+              <tr>
+                <td>Bus Pass</td>
+                <td>Transportation</td>
+                <td>$30.00</td>
+              </tr>
+              <tr>
+                <td>Movie Night</td>
+                <td>Entertainment</td>
+                <td>$25.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>
